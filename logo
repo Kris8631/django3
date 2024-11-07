@@ -1,0 +1,66 @@
+base.html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+
+
+
+
+
+navbar.html
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <!-- <a class="navbar-brand" href="{% url 'home' %}">ABO</a> -->
+        <a class="navbar-brand fancy-logo" href="{% url 'home' %}">
+            <i class="fas fa-leaf"></i> ABO
+        </a>
+        <style>
+            /* Font style and gradient effect */
+.fancy-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff6b6b, #f3a683, #3dc1d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Icon styling */
+.fancy-logo i {
+    font-size: 1.2em;
+    color: #ff6b6b;
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+.fancy-logo:hover {
+    transform: scale(1.1);
+    color: #f1f1f1;
+}
+
+.fancy-logo:hover i {
+    color: #f3a683;
+}
+
+        </style>
